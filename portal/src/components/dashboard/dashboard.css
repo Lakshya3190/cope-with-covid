@@ -1,0 +1,10 @@
+.menu-option{
+    background-color: #61dafb;
+    color: #282c34;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+}
+
+h1{
+    justify-content: flex-end;
+}

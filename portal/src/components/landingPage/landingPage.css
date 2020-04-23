@@ -1,0 +1,21 @@
+
+body {
+    background: linear-gradient(90deg, #FFC86F 80%, #FF6F6F 50%);
+    height: 100%;
+    margin: 0px;
+}
+.landingPage{
+    display: flex;
+    background: linear-gradient(90deg, #FFC86F 50%, #A956BE 50%);
+}
+
+.menu-option{
+    background: linear-gradient(90deg, #FFC86F 50%, #FFC86F 50%);
+    color: #282c34;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+}
+
+h1{
+    justify-content: flex-end;
+}
