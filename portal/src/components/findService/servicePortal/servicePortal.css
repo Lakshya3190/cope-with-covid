@@ -1,8 +1,13 @@
 
 .title{
-    color: #61dafb;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .option{
     color: antiquewhite;
+}
+
+.port{
+    font-family: "Courier New", Courier, monospace;
 }

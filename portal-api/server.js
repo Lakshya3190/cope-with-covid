@@ -17,7 +17,7 @@ const database = {
             created: new Date()
         },
         {
-            kind: 'Mechanical',
+            kind: 'Technical',
             email: 'lakshya_tyagi@icloud.com',
             phone: '8384081791',
             society: 'Amrapali Leisure Valley',
@@ -41,7 +41,7 @@ const database = {
             created: new Date()
         },
         {
-            kind: 'Mechanical',
+            kind: 'Technical',
             email: 'lakshya_tyagi@icloud.com',
             phone: '8384081791',
             society: 'Shipra Riviera',
@@ -65,7 +65,7 @@ const database = {
             created: new Date()
         },
         {
-            kind: 'Mechanical',
+            kind: 'Technical',
             email: 'lakshya_tyagi@icloud.com',
             phone: '8384081791',
             society: 'Gaur City',
@@ -73,7 +73,7 @@ const database = {
             created: new Date()
         },
         {
-            kind: 'Mechanical',
+            kind: 'Technical',
             email: 'lakshya_tyagi@icloud.com',
             phone: '8384081791',
             society: 'Gaur City',
@@ -81,7 +81,7 @@ const database = {
             created: new Date()
         },
         {
-            kind: 'Mechanical',
+            kind: 'Technical',
             email: 'lakshya_tyagi@icloud.com',
             phone: '8384081791',
             society: 'Amrapali Leisure Valley',

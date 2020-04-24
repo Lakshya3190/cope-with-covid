@@ -75,10 +75,8 @@ class dashboard extends React.Component {
                         <h1 className = 'f1'>Track Covid-19</h1>
 
                         <div className = 'menu pa1'>
-                        <p onClick = {() => {this.onDeaths(); this.onIndiaDeaths(); this.onWorldSpread(); this.onAgeSpread()}} className = 'menu-option ma4 pointer br2 shadow-1 f2 pa3 grow'>Deaths due to Covid-19</p>
-                        <p onClick = {() => this.onDashRouteChange('india')} className = 'menu-option ma4 pointer br2 shadow-1 f2 pa3 grow' >Provide a Service</p>
-                        <p onClick = {() => this.onDashRouteChange('vulnerabilityAnalysis')} className = 'menu-option ma4 pointer br2 shadow-1 f2 pa3 grow' >Vulnerability Analysis</p>
-                        <p onClick = {() => this.onDashRouteChange('dashboard')} className = 'menu-option ma4 pointer br2 shadow-1 f2 pa3 grow' >Covid-19 Dashboard</p>
+                        <p onClick = {() => {this.onDeaths(); this.onIndiaDeaths(); this.onWorldSpread(); this.onAgeSpread()}} className = 'menu-option ma4 pointer br2 shadow-1 f2 pa3 grow'>Dashboard</p>
+                        <p  onClick = {() => this.props.onRouteChange('home')} style = {{flex: 'flex', justifyContent: 'start', color: 'white'}} className = 'b ph3 pv2 input-reset ba b--white bg-blue grow pointer f3 dib form button pa4 br3'>Home</p>
                         </div>
                     </div>
                     : <Deaths data = {this.state.data} india_data = {this.state.india_data} world_data = {this.state.world_data} age_data = {this.state.age_data}/>

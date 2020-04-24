@@ -1,5 +1,6 @@
 import React from 'react';
 import PopUp from './popUp/popUp.js';
+import './card_shop.css';
 
 class CardShop extends React.Component {
 
@@ -27,7 +28,7 @@ class CardShop extends React.Component {
                     <p><strong>Contact</strong><br/>{this.props.contact}</p>
                     <p><strong>Shop Name</strong><br/>{this.props.shop_name}</p>
                     <p><strong>Society Name</strong><br/>{this.props.society_name}</p>
-                    <p onClick = {this.togglePopup.bind(this)} className = 'pa2 f4 pointer grow'>Show Description</p>
+                    <p onClick = {this.togglePopup.bind(this)} className = 'pa2 f4 pointer grow button_card_shop b'>Description</p>
                 </div>
                 {this.state.showPopup ?  
                 <PopUp  

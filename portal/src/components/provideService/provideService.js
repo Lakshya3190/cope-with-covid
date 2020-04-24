@@ -66,32 +66,44 @@ class provideService extends React.Component {
 
                         <div className = 'pa3'>
                                 <span style = {{color: 'white'}} className = 'pa4'>Choose a service you can offer:<br/></span> 
-                                    <select onChange = {this.onKindChange} id="kind" name="Kind">
+                                    <select onChange = {this.onKindChange} id="kind" name="Kind" className = 'br4'>
                                         <option value="Medical">Medical</option>
                                         <option value="Supplies">Supplies</option>
                                         <option value="Financial">Financial</option>
-                                        <option value="Mechanical">Mechanical</option>
+                                        <option value="Technical">Technical</option>
                                     </select>
                         </div>
 
                         <div class="mt3">
                             <label style = {{color: 'white'}} className="db fw6 lh-copy f6" htmlFor="email-address">Email</label>
-                            <input onChange = {this.onEmailChange} className="pa2 input-reset ba bg-white hover-bg-black hover-white w-60" type="email" name="email-address"  id="email-address"/>
+                            <input onChange = {this.onEmailChange} 
+                                  className="pa2 input-reset ba bg-white hover-bg-black hover-white w-60 form br4" 
+                                  type="email" 
+                                  name="email-address"  
+                                  id="email-address"/>
                         </div>
 
                         <div class="mt3">
                             <label style = {{color: 'white'}}  className="db fw6 lh-copy f6" htmlFor="email-address">Phone</label>
-                            <input  onChange = {this.onPhoneChange} className="pa2 input-reset ba bg-white hover-bg-black hover-white w-60" type="email" name="email-address"  id="email-address"/>
+                            <input  onChange = {this.onPhoneChange} 
+                                    className="pa2 input-reset ba bg-white hover-bg-black hover-white w-60 form br4" 
+                                    type="email" 
+                                    name="email-address"  
+                                    id="email-address"/>
                         </div>
 
                         <div class="mt3">
                             <label  style = {{color: 'white'}} className="db fw6 lh-copy f6" htmlFor="email-address">Name of Society</label>
-                            <input onChange = {this.onSocietyChange} className="pa2 input-reset ba bg-white hover-bg-black hover-white w-70" type="email" name="email-address"  id="email-address"/>
+                            <input onChange = {this.onSocietyChange} 
+                                   className="pa2 input-reset ba bg-white hover-bg-black hover-white w-70 form br4" 
+                                   type="email" 
+                                   name="email-address"  
+                                   id="email-address"/>
                         </div>
 
                     <div className = 'pa3'>
                             <label style = {{color: 'white'}} htmlFor="comment" className="f6 b db mb2">Description of Service <span class="normal black-60">(optional)</span></label>
-                            <textarea onChange = {this.onDescriptionChange} id="comment" name="comment" className="db border-box hover-black w-100 measure ba b--black-20 pa2 br2 mb2" aria-describedby="comment-desc"></textarea>
+                            <textarea onChange = {this.onDescriptionChange} id="comment" name="comment" className="db border-box hover-black w-100 measure ba b--black-20 pa2 br4 mb2" aria-describedby="comment-desc"></textarea>
                             <small style = {{color: 'white'}} id="comment-desc" className="f6 black-60">Add a description of services you are willing to offer.</small>
                     </div>
 

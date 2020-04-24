@@ -46,13 +46,13 @@ class servicePortal extends React.Component{
 
             return(
                 <div className = 'port'>
-                    <p onClick = {() => this.props.onRouteChange('home')} style = {{flex: 'flex', justifyContent: 'start'}}className = 'grow dim pointer f3 option'>Home</p>
+                    <p onClick = {() => this.props.onRouteChange('home')} style = {{flex: 'flex', justifyContent: 'start'}}className = 'b ph3 pv2 input-reset ba b--white bg-blue grow pointer f3 dib form button pa4 br3'>Home</p>
     
-                    <h1 className = 'title f1'>Services Available in Your Society</h1>
+                    <p className = 'title f1 ma0 b'>Services Available in Your Society</p>
     
-                    <div className ='serviceOptions bb bw2 b--black br bw1 b--black' style = {{display: 'flex' ,justifyContent: 'center'}}>
-                        <p onClick = {() => this.onOptionClick('resident')} className = ' pr2 pointer grow f3 b--white option'>Residents</p>
-                        <p onClick = {() => this.onOptionClick('shops')} className = 'pl2 pointer grow f3 b--white option'>Shops</p>
+                    <div className ='serviceOptions bb bw2 b--black' style = {{display: 'flex' ,justifyContent: 'center'}}>
+                        <p onClick = {() => this.onOptionClick('resident')} className = ' b ph3 pv2 input-reset ba b--white bg-blue grow pointer f3 dib form button pa4 br3 b--white option'>Homes Near You</p>
+                        <p onClick = {() => this.onOptionClick('shops')} className = 'b ph3 pv2 input-reset ba b--white bg-blue grow pointer f3 dib form button pa4 br3 b--white option'>Shops Near You</p>
                     </div>
                     
                     {

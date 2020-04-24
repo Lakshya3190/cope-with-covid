@@ -1,0 +1,9 @@
+.form{
+    background-color: rgba(0, 0, 0, 0.347);
+}
+
+select{
+    color: white;
+}
+
+fieldset { border:0px;}
