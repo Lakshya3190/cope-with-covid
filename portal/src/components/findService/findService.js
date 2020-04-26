@@ -76,7 +76,7 @@ class findService extends React.Component {
                             <input onChange = {this.onSocietyNameChange} className="pa2 input-reset ba bg-white hover-bg-black hover-white w-100" type="email" name="email-address"  id="email-address"/>
                         </div>
                         <div className="pa4">
-                            <input style = {{color: 'white'}} onClick = {() => {this.onSocietySubmit(); this.onShopSubmit()}} className="b ph3 pv2 input-reset ba b--white bg-transparent grow pointer f6 dib form br2 button" type="submit" value="Submit"/>
+                            <input style = {{color: 'white'}} onClick = {() => {this.onSocietySubmit(); this.onShopSubmit()}} className="b ph3 pv2 input-reset ba b--white bg-transparent grow pointer f6 dib form button" type="submit" value="Submit"/>
                             <p  onClick = {() => this.props.onRouteChange('home')} style = {{flex: 'flex', justifyContent: 'start', color: 'white'}} className = 'b ph3 pv2 input-reset ba b--white bg-blue grow pointer f6 dib form button'>Home</p>
                         </div>
                     </fieldset>

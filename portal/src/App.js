@@ -31,7 +31,7 @@ onRouteChange = (route) => {
                         params={{
                           particles: {
                           number: {
-                            value: 600,
+                            value: 400,
                             density: {
                               enable: true,
                               value_area: 800
@@ -42,7 +42,7 @@ onRouteChange = (route) => {
                           },
                           line_linked: {
                             width: 0,
-                            distance: 60
+                            distance: 45
                           }
                           }
                         }}

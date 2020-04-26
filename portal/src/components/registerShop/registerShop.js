@@ -65,7 +65,7 @@ class registerShop extends React.Component {
         return(
         <div>
 
-            <main class="pa4 black-80">
+            <main class="pa4 black-80" style = {{textAlign: 'center'}}>
                 <div className="measure center form pa3 br3">
                     <fieldset id="sign_up" class="ba b--transparent ph0 mh0 pa4">
                         <legend style = {{color: 'white'}} className="f2 fw6 ph0 mh0 pa3">Register Your Shop</legend>
