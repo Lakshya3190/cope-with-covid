@@ -177,7 +177,7 @@ app.post('/findService', (req,res) => {
         ]}
 
     for(let i=0;i<database.entities.length;i++){
-        if(database.entities[i].society === societyName){
+        if(database.entities[i].society.toLowerCase() === societyName.toLowerCase()){
             portalData.data.push(database.entities[i])
         }
     }
@@ -193,7 +193,7 @@ app.post('/registerShop', (req, res) => {
 
         ]}
         for(let i=0;i<shop_database.entities.length;i++){
-            if(shop_database.entities[i].society_name === societyName){
+            if(shop_database.entities[i].society_name.toLowerCase() === societyName.toLowerCase()){
                 shopData.shop_data.push(shop_database.entities[i])
             }
         }
