@@ -6,6 +6,7 @@ import ProvideService from './components/provideService/provideService.js';
 import VulnerabilityAnalysis from './components/vulnerabilityAnalysis/vulnerabilityAnalysis.js';
 import Dashb from './components/dashboard/dashboard.js';
 import RegisterShop from './components/registerShop/registerShop.js';
+import Particles from 'react-particles-js';
 
 
 
@@ -25,6 +26,27 @@ onRouteChange = (route) => {
   render(){
     return (
       <div className="App">
+
+      <Particles className = 'particles' 
+                        params={{
+                          particles: {
+                          number: {
+                            value: 600,
+                            density: {
+                              enable: true,
+                              value_area: 800
+                            }
+                          },
+                          size: {
+                            value: 0
+                          },
+                          line_linked: {
+                            width: 0,
+                            distance: 60
+                          }
+                          }
+                        }}
+                  />
       {
           this.state.route === 'home'
           ? <LandingPage onRouteChange = {this.onRouteChange}/>

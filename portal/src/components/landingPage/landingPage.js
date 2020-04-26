@@ -11,7 +11,7 @@ const landingPage = ({onRouteChange}) => {
         
 
 
-                <p className = 'pa1 pointer'style = {{fontSize: '80px', color:'white'}}><span style = {{fontSize: '110px', color:'orange'}}>COPE</span>
+                <p className = 'pa1 pointer b'style = {{fontSize: '80px', color:'white'}}><span style = {{fontSize: '110px', color:'orange'}}>COPE</span>
                                                                                             <br/>with<br/> 
                                                                                             <span style = {{fontSize: '150px', color:'green'}}>COVID</span></p>
 
