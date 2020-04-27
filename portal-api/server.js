@@ -1,10 +1,24 @@
 const express = require('express')
 const cors = require('cors');
+const knex = require('knex')
+
+const db = knex({
+    client: 'pg',
+    connection: {
+        host: '127.0.0.1',
+        user: 'postgres',
+        password: 'root',
+        database: 'copewithcovid'
+    }
+});
 
 const app = express();
 
 app.use(express.json());
 app.use(cors());
+
+
+
 
 const database = {
     entities: [
@@ -153,51 +167,68 @@ const shop_database = {
 
 
 
-
 app.post('/register', (req, res) => {
     const {kind, email, phone, society, description} = req.body;
-    database.entities.push({
+    db('residents')
+    .returning('*')
+    .insert({
         kind: kind,
-        email:email,
+        email: email,
         phone: phone,
-        society: society,
-        description: description,
-        created: new Date()
+        society: society.toLowerCase(),
+        description: description
     })
-
-    res.json(database.entities[database.entities.length-1])
+    .then(residents => {
+        res.json(residents[0]);
+    })
+    .catch(err => res.status(400).json('Unable to accept submission.'))
 })
+
+
+
+app.post('/registerShop', (req, res) => {
+    const {type, delivery_type, contact, shop_name, society, description} = req.body;
+    db('shops')
+    .returning('*')
+    .insert({
+        type: type,
+        delivery_type: delivery_type,
+        contact: contact,
+        shop_name: shop_name,
+        society_name: society.toLowerCase(),
+        description: description
+    })
+    .then(shops => {
+        res.json(shops[0]);
+    })
+    .catch(err => res.status(400).json('Unable to accept submission.'))
+})
+
+
 
 app.post('/findService', (req,res) => {
     const {societyName} = req.body;
 
-    const portalData = {
-        data: [
-
-        ]}
-
-    for(let i=0;i<database.entities.length;i++){
-        if(database.entities[i].society.toLowerCase() === societyName.toLowerCase()){
-            portalData.data.push(database.entities[i])
-        }
-    }
-    return res.json(portalData.data)
+    db.select('*').from('residents').where({
+        society: societyName.toLowerCase()
+    })
+    .then(residents => {
+        res.json(residents)
+    })
+    .catch(err => res.status(400).json("Unable to fetch data."))
 })
 
 
-app.post('/registerShop', (req, res) => {
+app.post('/findShop', (req, res) => {
     const {societyName} = req.body;
 
-    const shopData = {
-        shop_data: [
-
-        ]}
-        for(let i=0;i<shop_database.entities.length;i++){
-            if(shop_database.entities[i].society_name.toLowerCase() === societyName.toLowerCase()){
-                shopData.shop_data.push(shop_database.entities[i])
-            }
-        }
-        return res.json(shopData.shop_data)
+    db.select('*').from('shops').where({
+        society_name: societyName.toLowerCase()
+    })
+    .then(shops => {
+        res.json(shops)
+    })
+    .catch(err => res.status(400).json("Unable to fetch data."))
 
 })
 

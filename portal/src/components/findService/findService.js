@@ -44,7 +44,7 @@ class findService extends React.Component {
 
 
     onShopSubmit = () => {
-        fetch('http://localhost:3005/registerShop', {
+        fetch('http://localhost:3005/findShop', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({

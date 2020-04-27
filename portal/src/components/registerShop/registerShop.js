@@ -30,7 +30,7 @@ class registerShop extends React.Component {
     }
 
     onShopNameChange = (event) => {
-        this.setState({contact: event.target.value})
+        this.setState({shop_name: event.target.value})
     }
 
     onSocietyChange = (event) => {
@@ -49,6 +49,7 @@ class registerShop extends React.Component {
                 type: this.state.type,
                 delivery_type: this.state.delivery_type,
                 contact: this.state.contact,
+                shop_name: this.state.shop_name,
                 society: this.state.society,
                 description: this.state.description 
             })
