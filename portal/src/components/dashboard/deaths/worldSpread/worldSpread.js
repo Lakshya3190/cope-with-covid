@@ -20,7 +20,7 @@ const worldSpread = (props) => {
     let confirmed_stat = []
     const confirmedstat = cases.map(
         (user, i) => {
-            confirmed_stat.push(parseInt(cases[i].replace(",", "")));
+            confirmed_stat.push(parseInt(cases[i].split(',').join("")));
             
         }
     )
