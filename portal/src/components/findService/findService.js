@@ -69,15 +69,15 @@ class findService extends React.Component {
             <main class="pa2 pt4 black-80">
                 <div className="measure center form pa4 br3 shadow-2">
                     <fieldset id="sign_up" class="ba b--transparent ph0 mh0">
-                        <legend style = {{color: 'white'}} className="f2 fw6 ph0 mh0 pa3">Find Services in Your Area</legend>
+                        <legend style = {{color: 'black'}} className="f2 fw6 ph0 mh0 pa3">Find Services in Your Area</legend>
 
                         <div class="mt3">
-                            <label style = {{color: 'white'}} className="db fw6 lh-copy f6" htmlFor="email-address">Please Enter a Society</label>
+                            <label style = {{color: 'black'}} className="db fw6 lh-copy f6" htmlFor="email-address">Please Enter a Society</label>
                             <input onChange = {this.onSocietyNameChange} className="pa2 input-reset ba bg-white hover-bg-black hover-white w-100" type="email" name="email-address"  id="email-address"/>
                         </div>
                         <div className="pa4">
-                            <input style = {{color: 'white'}} onClick = {() => {this.onSocietySubmit(); this.onShopSubmit()}} className="b ph3 pv2 input-reset ba b--white bg-transparent grow pointer f6 dib form button" type="submit" value="Submit"/>
-                            <p  onClick = {() => this.props.onRouteChange('home')} style = {{flex: 'flex', justifyContent: 'start', color: 'white'}} className = 'b ph3 pv2 input-reset ba b--white bg-blue grow pointer f6 dib form button'>Home</p>
+                            <input style = {{color: 'black'}} onClick = {() => {this.onSocietySubmit(); this.onShopSubmit()}} className="b ph3 pv2 input-reset ba b--white bg-transparent grow pointer f6 dib form button" type="submit" value="Submit"/>
+                            <p  onClick = {() => this.props.onRouteChange('home')} style = {{flex: 'flex', justifyContent: 'start', color: 'black'}} className = 'b ph3 pv2 input-reset ba b--white bg-blue grow pointer f6 dib form button'>Home</p>
                         </div>
                     </fieldset>
                 </div>

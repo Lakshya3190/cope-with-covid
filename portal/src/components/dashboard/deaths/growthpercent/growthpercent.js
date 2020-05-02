@@ -25,7 +25,7 @@ const growthPercent = (props) => {
         labels:['30','29','28','27','26','25','24','23','22','21','20','19','18','17','16','15','14','13','12','11','10','9','8','7','6','5','4','3','2','1'],
         datasets: [
             {
-            label: 'Percentage Rise in Fatalities',
+            label: 'Daily Percentage Rise in Fatalities',
             fontSize: 15,
             fontColor: 'white',
             fill: false,
@@ -50,7 +50,7 @@ const growthPercent = (props) => {
                     borderColor: 'orange',
                     title:{
                     display:true,
-                    text:'Death Rate Percentage: 30 Days',
+                    text:'Daily Percentage Rise in New Cases: 30 Days (World Wide)',
                     fontSize:20,
                     fontColor: 'white'
                     },

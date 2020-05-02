@@ -71,12 +71,12 @@ class dashboard extends React.Component {
             <div className = 'dashboard'>
                 {
                     this.state.dash_route === 'menu'
-                    ? <div>
-                        <h1 className = 'f1'>Track Covid-19</h1>
+                    ? <div className = 'page tc'>
+                        <p  onClick = {() => this.props.onRouteChange('home')} style = {{flex: 'flex', justifyContent: 'start', color: 'black'}} className = 'b ph3 pv2 input-reset ba b--white bg-blue grow pointer f3 dib form button pa4 br3'>Home</p>
+                        <h1 className = 'f1 db-head'>Track Covid-19</h1>
 
-                        <div className = 'menu pa1'>
-                        <p onClick = {() => {this.onDeaths(); this.onIndiaDeaths(); this.onWorldSpread(); this.onAgeSpread()}} className = 'menu-option ma4 pointer br2 shadow-1 f2 pa3 grow'>Dashboard</p>
-                        <p  onClick = {() => this.props.onRouteChange('home')} style = {{flex: 'flex', justifyContent: 'start', color: 'white'}} className = 'b ph3 pv2 input-reset ba b--white bg-blue grow pointer f3 dib form button pa4 br3'>Home</p>
+                        <div className = 'menu'>
+                        <p onClick = {() => {this.onDeaths(); this.onIndiaDeaths(); this.onWorldSpread(); this.onAgeSpread()}} className = 'tc ma4 pointer br2 shadow-1 f2 pa3 grow menu-option'>Dashboard</p>
                         </div>
                     </div>
                     : <Deaths data = {this.state.data} india_data = {this.state.india_data} world_data = {this.state.world_data} age_data = {this.state.age_data}/>

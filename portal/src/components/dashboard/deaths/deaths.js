@@ -97,7 +97,7 @@ const death = ({data, india_data, world_data, age_data}) => {
     )
 
     return(
-        <div className = 'plots'>
+        <div className = 'plots tc'>
             {dataArray} 
             {growthStatArray}
             {total}
@@ -118,10 +118,10 @@ const death = ({data, india_data, world_data, age_data}) => {
             {deathRate}
             {age}
 
-            <h1 className = 'f1 head'>Deaths due to Covid-19: Past 30 Days</h1>
-            <h1 className = 'total2  ma2 br3 pointer grow pa3'>Total Deaths:<br/> {total_deaths[0]}</h1>
-            <h1 className = 'total1  ma2 br3  pointer grow'>Past Day:<br/> {past_rise[0]}</h1>
-            <h1 className = 'total3  ma2 br3  pointer grow'>Percentage Rise:<br/> {percent_deaths[0]}</h1>
+            <h1 className = 'f1 head'>Covid 19 Dashboard</h1>
+            <h1 className = 'total2  ma2 br3 pointer grow pa3'>World Wide Deaths:<br/> {total_deaths[0]}</h1>
+            <h1 className = 'total1  ma2 br3  pointer grow'>World Wide Rise in Cases (Past Day)<br/> {past_rise[0]}</h1>
+            <h1 className = 'total3  ma2 br3  pointer grow'>World Wide Percentage Rise in Cases (Past Day) <br/> {percent_deaths[0]}</h1>
 
             <h1 className = 'total4  ma2 br3  pointer grow'>Total Deaths in India:<br/> {total_india_deaths[0]}</h1>
             <h1 className = 'total5  ma2 br3  pointer grow'>Total Cases in India:<br/> {total_india_cases[0]}</h1>

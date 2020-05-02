@@ -49,7 +49,7 @@ const growthStat = (props) => {
                 options={{
                     title:{
                     display:true,
-                    text:'New Cases',
+                    text:'Daily Rise in New Cases: Past 30 Days (World Wide)',
                     fontSize:20,
                     fontColor: 'white'
                     },

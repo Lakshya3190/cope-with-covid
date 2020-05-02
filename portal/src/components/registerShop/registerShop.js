@@ -69,10 +69,10 @@ class registerShop extends React.Component {
             <main class="pa4 black-80" style = {{textAlign: 'center'}}>
                 <div className="measure center form pa3 br3">
                     <fieldset id="sign_up" class="ba b--transparent ph0 mh0 pa4">
-                        <legend style = {{color: 'white'}} className="f2 fw6 ph0 mh0 pa3">Register Your Shop</legend>
+                        <legend style = {{color: 'black'}} className="f2 fw6 ph0 mh0 pa3">Register Your Shop</legend>
 
                         <div className = 'pa3'>
-                                <span style = {{color: 'white'}} className = 'pa4'>Choose the category of products you can offer:<br/></span> 
+                                <span style = {{color: 'black'}} className = 'pa4'>Choose the category of products you can offer:<br/></span> 
                                     <select className = 'br3' onChange = {this.onTypeChange} id="type" name="Type">
                                         <option value="Medical">Medical</option>
                                         <option value="Groceries">Groceries</option>
@@ -82,7 +82,7 @@ class registerShop extends React.Component {
                         </div>
 
                         <div className = 'pa3'>
-                                <span style = {{color: 'white'}} className = 'pa4'>Choose delivery method:<br/></span> 
+                                <span style = {{color: 'black'}} className = 'pa4'>Choose delivery method:<br/></span> 
                                     <select className = 'br3' onChange = {this.onDeliveryTypeChange} id="kind" name="Kind">
                                         <option value="Home Delivery">Home Delivery</option>
                                         <option value="Pick-Up">Pick-Up</option>
@@ -90,30 +90,30 @@ class registerShop extends React.Component {
                         </div>
 
                         <div class="mt3">
-                            <label style = {{color: 'white'}} className="db fw6 lh-copy f6" htmlFor="email-address">Contact</label>
+                            <label style = {{color: 'black'}} className="db fw6 lh-copy f6" htmlFor="email-address">Contact</label>
                             <input onChange = {this.onContactChange} className="br4 pa2 input-reset ba bg-white hover-bg-black hover-white w-60 form" type="email" name="email-address"  id="email-address"/>
                         </div>
 
                         <div class="mt3">
-                            <label style = {{color: 'white'}}  className=" db fw6 lh-copy f6" htmlFor="email-address">Shop Name</label>
+                            <label style = {{color: 'black'}}  className=" db fw6 lh-copy f6" htmlFor="email-address">Shop Name</label>
                             <input  onChange = {this.onShopNameChange} className="br4 pa2 input-reset ba bg-white hover-bg-black hover-white w-60 form" type="email" name="email-address"  id="email-address"/>
                         </div>
 
                         <div class="mt3">
-                            <label  style = {{color: 'white'}} className="db fw6 lh-copy f6" htmlFor="email-address">Name of Society</label>
-                            <input onChange = {this.onSocietyChange} className="br4 pa2 input-reset ba bg-white hover-bg-black hover-white w-70 form" type="email" name="email-address"  id="email-address"/>
+                            <label  style = {{color: 'black'}} className="db fw6 lh-copy f6" htmlFor="email-address">Name of Society</label>
+                            <input onChange = {this.onSocietyChange} className="br4 pa2 input-reset ba bg-transparent bg-white hover-bg-black hover-white w-70 form" type="email" name="email-address"  id="email-address"/>
                         </div>
 
                     <div className = 'pa3'>
-                            <label style = {{color: 'white'}} htmlFor="comment" className="f6 b db mb2">Description of Service <span class="normal black-60">(optional)</span></label>
+                            <label style = {{color: 'black'}} htmlFor="comment" className="f6 b db mb2">Description of Service <span class="normal black-60">(optional)</span></label>
                             <textarea onChange = {this.onDescriptionChange} id="comment" name="comment" className="db border-box hover-black w-100 measure ba b--black-20 pa2 br4 mb2" aria-describedby="comment-desc"></textarea>
-                            <small style = {{color: 'white'}} id="comment-desc" className="f6 black-60">Add a description of services you are willing to offer.</small>
+                            <small style = {{color: 'black'}} id="comment-desc" className="f6 black-60">Add a description of services you are willing to offer.</small>
                     </div>
 
                     </fieldset>
                     <div className="">
-                    <input style = {{color: 'white'}} onClick = {this.onSubmitRegister} className="b ph3 pv2 input-reset ba b--white bg-blue grow pointer f6 dib form button" type="submit" value="Submit"/>
-                    <p  onClick = {() => this.props.onRouteChange('home')} style = {{flex: 'flex', justifyContent: 'start', color: 'white'}} className = 'b ph3 pv2 input-reset ba b--white bg-blue grow pointer f6 dib form button'>Home</p>
+                    <input style = {{color: 'black'}} onClick = {this.onSubmitRegister} className="b ph3 pv2 input-reset ba b--white bg-blue grow pointer f6 dib form button" type="submit" value="Submit"/>
+                    <p  onClick = {() => this.props.onRouteChange('home')} style = {{flex: 'flex', justifyContent: 'start', color: 'black'}} className = 'b ph3 pv2 input-reset ba b--white bg-blue grow pointer f6 dib form button'>Home</p>
                     </div>
                 </div>
             </main>
