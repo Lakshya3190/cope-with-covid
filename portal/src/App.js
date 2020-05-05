@@ -59,7 +59,7 @@ onRouteChange = (route) => {
               ? <ProvideService onRouteChange = {this.onRouteChange}/>
               : (
                 this.state.route == 'vulnerabilityAnalysis'
-                ? <VulnerabilityAnalysis/>
+                ? <VulnerabilityAnalysis onRouteChange = {this.onRouteChange}/>
                 : (
                   this.state.route == 'dashboard'
                   ? <Dashb onRouteChange = {this.onRouteChange}/>
