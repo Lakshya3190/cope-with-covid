@@ -1,4 +1,21 @@
+@media only screen and (max-width: 1000px) {
+	.land1 {
+	  display: none;
+	}
 
+	.land2 {
+		display: none;
+	  }
+  }
+
+  @media only screen and (max-width: 600px) {
+	.land3 {
+	  padding-left: 0px;
+	  margin-left: 0px;
+	  justify-content: start;
+
+	}
+  }
 
 .menu{
   display: flex;

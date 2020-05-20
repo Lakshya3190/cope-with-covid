@@ -30,7 +30,7 @@ const landingPage = ({onRouteChange}) => {
 <div  className = 'land pa4 ml6'>
             <p className = 'b land1'>Cope with<br/>
             <span className = 'land2 b'>Covid</span></p>
-            <p className = 'b f1'><span style = {{color: 'grey'}}>We're all in this <br/></span>TOGETHER.|</p>
+            <p className = 'b f1 land3'><span style = {{color: 'grey'}}>We're all in this <br/></span>TOGETHER.|</p>
 </div>
                                                                                             
 
