@@ -79,7 +79,7 @@ class dashboard extends React.Component {
                         <p onClick = {() => {this.onDeaths(); this.onIndiaDeaths(); this.onWorldSpread(); this.onAgeSpread()}} className = 'tc ma4 pointer br2 shadow-1 f2 pa3 grow menu-option'>Dashboard</p>
                         </div>
                     </div>
-                    : <Deaths data = {this.state.data} india_data = {this.state.india_data} world_data = {this.state.world_data} age_data = {this.state.age_data}/>
+                    : <Deaths onRouteChange = {this.props.onRouteChange} data = {this.state.data} india_data = {this.state.india_data} world_data = {this.state.world_data} age_data = {this.state.age_data}/>
                 }
             </div>
 

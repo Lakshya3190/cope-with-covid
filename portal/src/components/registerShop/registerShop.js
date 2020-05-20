@@ -77,7 +77,7 @@ class registerShop extends React.Component {
                                         <option value="Medical">Medical</option>
                                         <option value="Groceries">Groceries</option>
                                         <option value="Hygiene">Hygiene</option>
-                                        <option value="Fruits/Vegetables">Fruits/Vegetables</option>
+                                        <option value="Fruits/Veges">Fruits and Vegetables</option>
                                     </select>
                         </div>
 

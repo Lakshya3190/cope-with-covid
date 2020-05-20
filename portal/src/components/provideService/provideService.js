@@ -67,6 +67,7 @@ class provideService extends React.Component {
                         <div className = 'pa3'>
                                 <span style = {{color: 'black'}} className = 'pa4'>Choose a service you can offer:<br/></span> 
                                     <select onChange = {this.onKindChange} id="kind" name="Kind" className = 'br4'>
+                                        <option value="">Pick an Option</option>
                                         <option value="Medical">Medical</option>
                                         <option value="Supplies">Supplies</option>
                                         <option value="Financial">Financial</option>

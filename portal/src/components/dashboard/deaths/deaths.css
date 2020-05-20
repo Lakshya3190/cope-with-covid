@@ -14,6 +14,7 @@ h1{
 
     grid-template-areas: 
     "header header"
+    "home home"
     "total1 total2"
     "total3 total4"
     "total5 total5"
@@ -87,4 +88,8 @@ h1{
 .g5{
     grid-area: g5;
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+.home{
+    grid-area: home;
 }

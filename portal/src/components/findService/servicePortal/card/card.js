@@ -2,7 +2,7 @@ import React from 'react';
 import PopUp from './popup/popup.js';
 import './card.css';
 import finance from './finance.png';
-import medical from './medical.png';
+import medi from './medical.png';
 import supplies from './supplies.png';
 import technical from './technical.png';
 
@@ -41,7 +41,7 @@ class Card extends React.Component {
                         :(
                             this.props.kind === "Medical"
                             ?<div>
-                                <img className = 'pa3' src = {medical}/>
+                                <img className = 'pa3' src = {medi}/>
                                 </div>
                             :(
                                 this.props.kind === "Supplies"

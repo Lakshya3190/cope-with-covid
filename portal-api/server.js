@@ -165,6 +165,7 @@ const shop_database = {
     ]
 }
 
+const result = []
 
 
 app.post('/register', (req, res) => {
@@ -234,24 +235,38 @@ app.post('/findShop', (req, res) => {
 
 
 app.post('/vulnerabilityAnalysis', (req, res) => {
-    const {ques1, ques2, ques3, ques4, ques5} = req.body;
+    const {ques2, ques3, ques4, ques5, ques6, ques7, ques8,ques9,ques10} = req.body;
     
-    const marks_ques1 = parseInt(ques1);
+
     const marks_ques2 = parseInt(ques2);
     const marks_ques3 = parseInt(ques3);
     const marks_ques4 = parseInt(ques4);
     const marks_ques5 = parseInt(ques5);
+    const marks_ques6 = parseInt(ques6);
+    const marks_ques7 = parseInt(ques7);
+    const marks_ques8 = parseInt(ques8);
+    const marks_ques9 = parseInt(ques9);
+    const marks_ques10 = parseInt(ques10);
 
-    const total = marks_ques1 + 
+    const total =
              marks_ques2 +
              marks_ques3 +
              marks_ques4 +
-             marks_ques5;
+             marks_ques5 +
+             marks_ques6 +
+             marks_ques7 +
+             marks_ques8 +
+             marks_ques9 +
+             marks_ques10;
     
-    const result = total/5;
-    return res.json(result)
-    
+    result.push(total);
+    res.json(result[result.length-1])
 })
+
+app.post('/getResult', (req, res) => {
+    res.json(result[result.length-1])
+})
+
 
 
 app.listen(3005, () => {

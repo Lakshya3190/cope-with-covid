@@ -6,7 +6,7 @@ import WorldSpread from './worldSpread/worldSpread.js';
 import AgeSpread from './ageSpread/ageSpread.js';
 import './deaths.css';
 
-const death = ({data, india_data, world_data, age_data}) => {
+const death = ({data, india_data, world_data, age_data, onRouteChange}) => {
     
 
     const percent_array = [];
@@ -118,7 +118,10 @@ const death = ({data, india_data, world_data, age_data}) => {
             {deathRate}
             {age}
 
+            
             <h1 className = 'f1 head'>Covid 19 Dashboard</h1>
+            <p onClick = {() => onRouteChange('home')} style = {{flex: 'flex', justifyContent: 'start'}}className = 'b ph3 pv2 input-reset ba b--white bg-blue grow pointer f3 dib pa1 home br3 ml3'>Home</p>
+
             <h1 className = 'total2  ma2 br3 pointer grow pa3'>World Wide Deaths:<br/> {total_deaths[0]}</h1>
             <h1 className = 'total1  ma2 br3  pointer grow'>World Wide Rise in Cases (Past Day)<br/> {past_rise[0]}</h1>
             <h1 className = 'total3  ma2 br3  pointer grow'>World Wide Percentage Rise in Cases (Past Day) <br/> {percent_deaths[0]}</h1>
@@ -153,12 +156,6 @@ const death = ({data, india_data, world_data, age_data}) => {
                                                        cases = {world_confirmed.slice(0,50)}
                                                        countries = {countries.slice(0,50)}/>
 
-                
-
-                
-
-                
-            
             
         </div> 
         </div>   

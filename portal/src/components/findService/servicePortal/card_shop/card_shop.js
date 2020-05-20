@@ -45,7 +45,7 @@ class CardShop extends React.Component {
                                     <img className = 'pa3' src = {groceries}/>
                                 </div>
                                 : (
-                                    this.props.type === "Fruits/Vegetables"
+                                    this.props.type === "Fruits/Veges"
                                     ? <div>
                                         <img className = 'pa3' src = {fruits}/>
                                         </div>
